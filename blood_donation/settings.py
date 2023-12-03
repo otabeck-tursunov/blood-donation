@@ -14,7 +14,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -109,13 +109,13 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 # locale
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = 'home/otabektu/otabek-tursunov.uz/blood-donation/statifiles'
+STATICFILES_DIRS = ['home/otabektu/otabek-tursunov.uz/blood-donation/static']
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/djangomo/django-mohirdev-demo.uz/django/media'
+MEDIA_ROOT = '/home/otabektu/otabek-tursunov.uz/blood-donation/media'
 
 # locale
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
